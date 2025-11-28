@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UMKM — Landing Page Premium</title>
+  <meta name="description" content="Landing page universal untuk UMKM — terasa seperti aplikasi native. CTA ke WhatsApp." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- GSAP core + ScrollTrigger (CDN light) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="app">
+  <!-- Mobile top nav / app-like header -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="menu-btn" aria-label="menu">☰</button>
+      <div class="brand">
+        <div class="brand-logo" aria-hidden></div>
+        <div class="brand-text">
+          <span class="name">UMKM</span>
+          <small class="tag">Premium • Local</small>
+        </div>
+      </div>
+      <a class="cta-whatsapp small" href="https://wa.me/6281234567890" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden><path fill="currentColor" d="M20.5 3.5..."/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="hero-media">
+          <!-- picture with webp placeholder (replace with /img/ files) -->
+          <picture>
+            <source data-srcset="/img/hero-1.webp" type="image/webp">
+            <img class="hero-img lazy" loading="lazy" alt="Produk unggulan" src="/img/placeholder-hero.webp">
+          </picture>
+        </div>
+        <div class="hero-body">
+          <h1 class="h1">Bawa UMKM-mu ke level berikutnya</h1>
+          <p class="lead">Desain premium, pelayanan cepat, dan strategi penjualan yang mudah diikuti. Cocok untuk coffee shop, barbershop, laundry, studio foto, dan lain-lain.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://wa.me/6281234567890">Chat via WhatsApp</a>
+            <a class="btn ghost" href="#produk">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK / MENU -->
+    <section id="produk" class="produk">
+      <div class="section-head">
+        <h2>Menu & Produk</h2>
+        <p class="muted">Pilih layanan atau produk yang paling cocok untuk pelangganmu.</p>
+      </div>
+
+      <div class="cards" role="list">
+        <!-- Card template: replace data-src with real /img paths -->
+        <article class="card" role="listitem">
+          <picture>
+            <source data-srcset="/img/product-1.webp" type="image/webp">
+            <img class="card-img lazy" loading="lazy" src="/img/placeholder-card.webp" alt="Produk 1">
+          </picture>
+          <div class="card-body">
+            <h3 class="card-title">Kopi Spesial</h3>
+            <p class="card-desc">Single origin, seduh manual — cocok untuk pelanggan yang apresiatif.</p>
+            <div class="card-foot">
+              <span class="price">Rp25.000</span>
+              <a class="btn small" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20pesan%20Kopi%20Spesial">Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <picture>
+            <source data-srcset="/img/product-2.webp" type="image/webp">
+            <img class="card-img lazy" loading="lazy" src="/img/placeholder-card.webp" alt="Produk 2">
+          </picture>
+          <div class="card-body">
+            <h3 class="card-title">Potong Rambut</h3>
+            <p class="card-desc">Gaya modern & klasik — barbershop ramah keluarga.</p>
+            <div class="card-foot">
+              <span class="price">Rp40.000</span>
+              <a class="btn small" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20booking%20Potong%20Rambut">Booking</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <picture>
+            <source data-srcset="/img/product-3.webp" type="image/webp">
+            <img class="card-img lazy" loading="lazy" src="/img/placeholder-card.webp" alt="Produk 3">
+          </picture>
+          <div class="card-body">
+            <h3 class="card-title">Laundry Express</h3>
+            <p class="card-desc">Cuci-kilat, pewangi premium, antar-jemput tersedia.</p>
+            <div class="card-foot">
+              <span class="price">Rp15.000</span>
+              <a class="btn small" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20paket%20Laundry">Order</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <div class="section-head">
+        <h2>Galeri</h2>
+        <p class="muted">Kesan pertama penting — tampilkan terbaikmu.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <picture class="gallery-item">
+          <source data-srcset="/img/gallery-1.webp" type="image/webp">
+          <img class="lazy" loading="lazy" src="/img/placeholder-thumb.webp" alt="Galeri 1">
+        </picture>
+        <picture class="gallery-item">
+          <source data-srcset="/img/gallery-2.webp" type="image/webp">
+          <img class="lazy" loading="lazy" src="/img/placeholder-thumb.webp" alt="Galeri 2">
+        </picture>
+        <picture class="gallery-item">
+          <source data-srcset="/img/gallery-3.webp" type="image/webp">
+          <img class="lazy" loading="lazy" src="/img/placeholder-thumb.webp" alt="Galeri 3">
+        </picture>
+        <picture class="gallery-item">
+          <source data-srcset="/img/gallery-4.webp" type="image/webp">
+          <img class="lazy" loading="lazy" src="/img/placeholder-thumb.webp" alt="Galeri 4">
+        </picture>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN / FEATURES -->
+    <section id="fitur" class="fitur">
+      <div class="section-head">
+        <h2>Keunggulan Bisnis</h2>
+        <p class="muted">Mengapa pelanggan memilihmu.</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-ico">⚡</div>
+          <div>
+            <h4>Cepat & Tepat</h4>
+            <p class="muted">Pelayanan efisien, antrean lebih singkat.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-ico">💎</div>
+          <div>
+            <h4>Kualitas Terjamin</h4>
+            <p class="muted">Bahan & metode yang konsisten.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-ico">🤝</div>
+          <div>
+            <h4>Ramah Pelanggan</h4>
+            <p class="muted">Pengalaman hangat & mudah diingat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp floating CTA -->
+  <a id="wa-fab" class="wa-fab" href="https://wa.me/6281234567890" aria-label="Hubungi via WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden><path fill="currentColor" d="M20.5 3.5..."/></svg>
+    <span>Chat</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>UMKM Premium</strong>
+        <p class="muted">Solusi sederhana, desain berkelas.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#produk">Produk</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#fitur">Keunggulan</a>
+      </div>
+    </div>
+    <small class="copyright">© <span id="year"></span> UMKM — All rights reserved.</small>
+  </footer>
+
+  <!-- NOTE: Replace /img/placeholder-*.webp and other /img/* with real optimized WebP files.
+       Example file names to add under /img:
+       - placeholder-hero.webp
+       - hero-1.webp
+       - placeholder-card.webp
+       - product-1.webp, product-2.webp, product-3.webp
+       - placeholder-thumb.webp
+       - gallery-1.webp ... gallery-4.webp
+  -->
+</body>
+</html>
